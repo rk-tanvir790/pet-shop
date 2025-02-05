@@ -14,6 +14,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Font Awsome CDN -->
+    <script src="https://kit.fontawesome.com/06e9d3ab87.js" crossorigin="anonymous"></script>
+
     <!-- Custom Style sheet -->
      <style>
         .font-adlam{
@@ -34,16 +37,61 @@
         .text-clr{
             color: #111111;
         }
+        .hero-bg{
+            background-image: url(c1-assets/cat-big.png);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: contain;
+        }
      </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <!-- Navbar -->
-        <nav></nav>
-
-        <!-- Hero section -->
-        <section></section>
+    <!-- Navbar section Start For Desktop -->
+     <!-- Navbar -->
+      <nav class="bg-[#FFF9F4] hidden lg:block">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <!-- Branding Part -->
+            <div class="flex items-center justify-center gap-3">
+                <img src="c1-assets/logo-header.png" alt="">
+                <h2 class="font-sora text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+            </div>
+            <!-- Menu Items -->
+            <div class="flex items-center gap-8 font-sora text-xl text-clr">
+                <p><a href="#">Find a pet</a></p>
+                <p><a href="#">Breeds</a></p>
+                <p><a href="#">Contact Us</a></p>
+            </div>
+            <!-- Icon & Button Part -->
+            <div class="flex items-center gap-3">
+                <img src="c1-assets/bell.png" alt="">
+                <img src="c1-assets/search.png" alt="">
+                <button class="px-8 py-3 font-sora text-xl border border-[#FFDC26] rounded-lg">Login</button>
+                <button class="px-8 py-3 font-sora text-xl bg-[#FFDC26] border border-[#FFDC26] rounded-lg">Register</button>
+            </div>
+         </div>
+      </nav>
+     
+    <!-- Navbar section End For Desktop -->
+    <!-- Navbar Section Start For Mobile -->
+     <nav class="bg-[#FFF9F4] lg:hidden">
+        <div class="container mx-auto flex justify-between items-center px-2 py-2">
+            <img src="c1-assets/logo-header.png" alt="">
+            <img src="c1-assets/bars-3.png" alt="">
+        </div>
+     </nav>
+     <!-- Navbar Section End For Mobile -->
+     <!-- Hero Section Start -->
+      <section>
+        <div class="container mx-auto hero-bg px-4 pt-8 pb-28 md:py-8 md:my-20 md:h-[780px]">
+            <h2 class="font-adlam text-3xl md:text-6xl max-w-[681px]">
+                Pamper Your Pet, Because They Deserve the Bes
+            </h2>
+            <p class="font-sora text-base md:text-xl max-w-[672px] mt-4 mb-7">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="px-8 py-3 font-sora text-xl bg-[#FFDC26] border border-[#FFDC26] rounded-lg">Find a pet</button>
+        </div>
+      </section>
+      <!-- Hero section End -->
     </header>
 
     <!-- Main Section -->
