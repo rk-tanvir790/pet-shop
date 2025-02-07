@@ -43,6 +43,9 @@
             background-position: center bottom;
             background-size: contain;
         }
+        .footer-bg{
+            background-color: rgba(255, 220, 38, 0.5);
+        }
      </style>
 </head>
 <body>
@@ -326,10 +329,82 @@
             </div>
          </section>
         <!-- Product Section End -->
+        <!-- Price Section Start -->
+         <section>
+            <div class="container mx-auto px-4 pb-80 md:pt-36 md:pb-96">
+                <h2 class="font-adlam text-2xl md:text-4xl text-clr mb-12">Everyday low Price</h2>
+                  <!-- Div for flex -->
+                   <div class="flex flex-col md:flex-row gap-6">
+                    <!-- Div for left -->
+                     <div class=" relative px-10 pt-10 pb-36 md:px-20 md:py-32 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-xl flex-grow md:max-w-[55%]">
+                        <!-- Div for content -->
+                         <div class="md:max-w-[300px]">
+                            <h5 class="font-sora text-xl text-clr hidden md:block">Under Price</h5>
+                            <h2 class="font-adlam text-2xl md:text-3xl text-clr">Pet Grooming Mitt</h2>
+                            <p class="font-adlam text-2xl text-white hidden md:block">(Easy Hair Removal)</p>
+                            <p class="font-adlam text-4xl md:text-6xl text-white md:text-clr">$7.99</p>
+                         </div>
+                         <img src="c1-assets/cute-dog-mid.png" class="absolute right-0 bottom-0 w-[42%]" alt="">
+                     </div>
+                    <!-- Div for right -->
+                     <div class=" relative px-10 pt-10 pb-36 md:p-14 bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-xl flex-grow md:max-w-[45%]">
+                        <div>
+                            <h2 class="font-adlam text-2xl md:text-3xl text-clr">T-Shirt for Dogs</h2>
+                            <p class="font-adlam text-4xl md:text-6xl text-[#FFDC26]">$7.99</p>
+                         </div>
+                         <img src="c1-assets/cute-pet-mid.png" class="absolute right-0 bottom-0 w-[42%]" alt="">
+                     </div>
+                   </div>
+            </div>
+         </section>
+        <!-- Price Section End -->
      </main>
 
     <!-- Footer Section -->
-     <footer></footer>
+     <footer class="footer-bg px-4 pt-[360px]">
+        <!-- Section no 01 -->
+         <section class="container mx-auto section-bgc rounded-2xl flex flex-col md:flex-row items-center px-[45px] md:px-[90px] py-[40px] gap-[120px] mt-[-600px]">
+            <img src="c1-assets/cute-pet-mid.png" alt="">
+            <div class="text-center md:text-left">
+                <h3 class="font-adlam text-2xl md:text-4xl text-clr">Get Pawsome News!</h3>
+                <p class="font-sora text-base md:text-xl text-clr mt-5 mb-10">Exclusive training tips, ticks, product deals and more.</p>
+                <input type=" email" placeholder="Enter email" class="rounded-lg p-5 w-full mb-10"><br>
+                <button class="px-8 py-3 font-sora text-xl bg-[#FFDC26] text-black rounded-lg">Subscribe</button>
+            </div>
+         </section>
+        <!-- Section no 02 -->
+        <section class="container mx-auto py-[70px] md:py-[140px]">
+            <!-- Div for flex -->
+             <div class="flex flex-col md:flex-row justify-between gap-9 md:items-center"> 
+                <!-- Left part -->
+                 <div class="max-w-[426px]">
+                    <!-- branding part -->
+                     <div class="flex items-center gap-3">
+                        <img src="c1-assets/logo-footer.png" alt="">
+                        <h2 class="font-sora text-xl md:text-2xl text-clr">Browse4Pets</h2>
+                     </div>
+                     <p class="font-sora text-base md:text-xl text-clr mt-6">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                 </div>
+                <!-- Middle Part -->
+                 <div class="font-sora text-base md:text-xl text-clr flex flex-col gap-8">
+                    <p><a href="#">Find a pet</a></p>
+                    <p><a href="#">Breeds</a></p>
+                    <p><a href="#">Contact us</a></p>
+                 </div>
+                <!-- Right part -->
+                 <div class=" mt-8 md:mt-20">
+                    <h6 class="font-sora text-base text-clr mb-4">Follow Us</h6>
+                    <!-- Div for image -->
+                     <div class="flex gap-8 items-center">
+                        <img src="c1-assets/facebook.png" alt="">
+                        <img src="c1-assets/insta.png" alt="">
+                        <img src="c1-assets/linkedin.png" alt="">
+                        <img src="c1-assets/youtube.png" alt="">
+                     </div>
+                 </div>
+             </div>
+        </section>
+     </footer>
 
 </body>
 </html>
